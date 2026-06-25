@@ -24,7 +24,7 @@ Grab the latest `.exe` from the [Releases](../../releases) page — no installat
 
 ## Disclaimer
 
-Built for personal use and shared with friends. Use at your own risk — not affiliated with Roblox or the developers of Grow a Garden 2.
+Built for personal use and shared with friends.
 
 ## License
 
