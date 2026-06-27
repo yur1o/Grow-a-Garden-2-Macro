@@ -194,8 +194,8 @@ const GEARS = [
   'Common Watering Can', 'Common Sprinkler', 'Sign', 'Uncommon Sprinkler', 
   'Trowel', 'Rare Sprinkler', 'Jump Mushroom', 'Speed Mushroom', 'Lantern', 
   'Shrink Mushroom', 'Supersize Mushroom', 'Gnome', 'Flashbang', 'Basic Pot', 
-  'Legendary Sprinkler', 'Invisibility Mushroom', 'Teleporter', 'Wheelbarrow', 
-  'Super Watering Can', 'Super Sprinkler'
+  'Legendary Sprinkler', 'Invisibility Mushroom', 'Teleporter', 'Player Magnet',
+  'Strawberry Sniper', 'Wheelbarrow','Super Watering Can', 'Super Sprinkler'
 ];
 
 /* ── Mode management ──────────────────────────────────────── */

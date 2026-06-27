@@ -1191,11 +1191,61 @@ def buy_wheelbarrow():
 
     pass
 
+def buy_player_magnet():
+    log("Buying Player Magnet.", "info")
+
+    time.sleep(DELAY)
+    pydirectinput.press('down', presses=18)
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+
+    pydirectinput.press('down')
+    time.sleep(DELAY)
+    pydirectinput.press('enter', presses=5)
+    time.sleep(DELAY)
+    log("Player Magnet purchased.", "info")
+
+    pydirectinput.press('up')
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+    pydirectinput.press('up', presses=18)
+
+    pass
+
+def buy_strawberry_magnet():
+    log("Buying Strawberry Magnet.", "info")
+
+    time.sleep(DELAY)
+    pydirectinput.press('down', presses=19)
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+
+    pydirectinput.press('down')
+    time.sleep(DELAY)
+    pydirectinput.press('enter', presses=5)
+    time.sleep(DELAY)
+    log("Strawberry Magnet purchased.", "info")
+
+    pydirectinput.press('up')
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+    pydirectinput.press('up', presses=19)
+
+    pass
+
 def buy_super_watering_can():
     log("Buying Super Watering Can.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=18)
+    pydirectinput.press('down', presses=20)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -1212,7 +1262,7 @@ def buy_super_watering_can():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=18)
+    pydirectinput.press('up', presses=20)
 
     pass
 
@@ -1220,7 +1270,7 @@ def buy_super_sprinkler():
     log("Buying Super Sprinkler.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=19)
+    pydirectinput.press('down', presses=21)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -1237,7 +1287,7 @@ def buy_super_sprinkler():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=19)
+    pydirectinput.press('up', presses=21)
 
     pass
 
@@ -1294,6 +1344,8 @@ GEAR_BUY_MAP = {
     "Invisibility Mushroom": buy_invisibility_mushroom,
     "Teleporter": buy_teleporter,
     "Wheelbarrow": buy_wheelbarrow,
+    "Player Magnet": buy_player_magnet,
+    "Strawberry Magnet": buy_strawberry_magnet,
     "Super Watering Can": buy_super_watering_can,
     "Super Sprinkler": buy_super_sprinkler,
 }
