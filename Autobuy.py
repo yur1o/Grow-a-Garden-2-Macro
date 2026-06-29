@@ -715,11 +715,36 @@ def buy_moon_bloom():
 
     pass
 
+def buy_hypno_bloom():
+    log("Buying Hypno Bloom seed.", "info")
+
+    time.sleep(DELAY)
+    pydirectinput.press('down', presses=24)
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+
+    pydirectinput.press('down')
+    time.sleep(DELAY)
+    pydirectinput.press('enter', presses=5)
+    time.sleep(DELAY)
+    log("Hypno Bloom purchased.", "info")
+
+    pydirectinput.press('up')
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+    pydirectinput.press('up', presses=24)
+
+    pass
+
 def buy_dragons_breath():
     log("Buying Dragon's Breath seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=24)
+    pydirectinput.press('down', presses=25)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -736,7 +761,7 @@ def buy_dragons_breath():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=24)
+    pydirectinput.press('up', presses=25)
 
     pass
 
@@ -1321,6 +1346,7 @@ SEED_BUY_MAP = {
     "Pomegranate": buy_pomegranate,
     "Poison Apple": buy_poison_apple,
     "Moon Bloom": buy_moon_bloom,
+    "Hypno Bloom": buy_hypno_bloom,
     "Dragon's Breath": buy_dragons_breath,
 }
 

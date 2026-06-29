@@ -23,7 +23,7 @@ try:
 except ImportError:
     WIN32_OK = False
 
-# -- Hotkeys via pynput (no admin required) ------------------------------------
+# -- Hotkeys via pynput  ------------------------------------
 try:
     from pynput import keyboard as pynput_kb
     KB_OK = True
@@ -82,41 +82,32 @@ def save_config(c):
 cfg            = load_config()
 macro_running  = False
 roblox_focused = False
-window         = None   # assigned after webview.create_window
-_hotkey_listener = None  # the active pynput Listener
+window         = None   
+_hotkey_listener = None  
 _app_hwnd = None
-_active_mode = cfg.get("mode", "seeds")  # Track current active mode
-_start_stop_lock = threading.Lock()  # guards macro_running against racing start() calls
+_active_mode = cfg.get("mode", "seeds")  
+_start_stop_lock = threading.Lock()  
 
 # -- pynput key normalisation --------------------------------------------------
 def _str_to_pynput_key(key_str):
-    """
-    Convert a string like 'f1', 'a', 'ctrl' to a pynput Key or KeyCode.
-    pynput uses Key.f1 for special keys and KeyCode.from_char('a') for chars.
-    """
+
     key_str = key_str.lower().strip()
-    # Try named special keys first (f1-f12, esc, space, etc.)
     try:
-        return pynput_kb.Key[key_str]          # e.g. Key.f1, Key.esc
+        return pynput_kb.Key[key_str]         
     except KeyError:
         pass
-    # Single printable character
     if len(key_str) == 1:
         return pynput_kb.KeyCode.from_char(key_str)
-    # Fallback - try vk lookup via char (handles 'enter', 'tab', etc.)
     try:
         return pynput_kb.Key[key_str]
     except Exception:
         return None
 
 def _pynput_key_matches(pressed_key, target_key):
-    """Return True if the pressed pynput key matches our target."""
     if target_key is None:
         return False
-    # Special key comparison
     if isinstance(target_key, pynput_kb.Key):
         return pressed_key == target_key
-    # KeyCode char comparison (case-insensitive)
     if isinstance(target_key, pynput_kb.KeyCode):
         if isinstance(pressed_key, pynput_kb.KeyCode):
             return (pressed_key.char or '').lower() == (target_key.char or '').lower()
@@ -533,7 +524,7 @@ class MacroAPI:
 
 # -- Hotkey action targets -----------------------------------------------------
 global _api
-_api = None   # set after MacroAPI is instantiated
+_api = None  
 
 def api_start(): _api and _api.start()
 def api_stop():  _api and _api.stop()

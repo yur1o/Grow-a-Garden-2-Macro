@@ -187,7 +187,8 @@ const SEEDS = [
   'Carrot', 'Strawberry', 'Blueberry', 'Tulip', 'Tomato', 'Apple', 'Bamboo', 
   'Corn', 'Cactus', 'Pineapple', 'Mushroom', 'Green Bean', 'Banana', 'Grape', 
   'Coconut', 'Mango', 'Dragon Fruit', 'Acorn', 'Cherry', 'Sunflower', 
-  'Venus Fly Trap', 'Pomegranate', 'Poison Apple', 'Moon Bloom', "Dragon's Breath"
+  'Venus Fly Trap', 'Pomegranate', 'Poison Apple', 'Moon Bloom', 'Hypno Bloom', 
+  "Dragon's Breath"
 ];
 
 const GEARS = [
