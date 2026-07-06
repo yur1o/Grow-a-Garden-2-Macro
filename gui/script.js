@@ -186,9 +186,9 @@ modal.addEventListener('click', e => {
 const SEEDS = [
   'Carrot', 'Strawberry', 'Blueberry', 'Tulip', 'Tomato', 'Apple', 'Bamboo', 
   'Corn', 'Cactus', 'Pineapple', 'Mushroom', 'Green Bean', 'Banana', 'Grape', 
-  'Coconut', 'Mango', 'Dragon Fruit', 'Acorn', 'Cherry', 'Sunflower', 
-  'Venus Fly Trap', 'Pomegranate', 'Poison Apple', 'Moon Bloom', 'Hypno Bloom', 
-  "Dragon's Breath"
+  'Coconut', 'Mango','Rocket Pop','Dragon Fruit', 'Acorn', 'Cherry', 'Sunflower', 
+  'Fire Fern', 'Venus Fly Trap', 'Pomegranate', 'Poison Apple', 'Moon Bloom', 
+  'Hypno Bloom', "Dragon's Breath"
 ];
 
 const GEARS = [

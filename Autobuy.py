@@ -515,11 +515,37 @@ def buy_mango():
 
     pass
 
+# Limited Time Seed
+def buy_rocket_pop():
+    log("Buying Rocket Pop seed.", "info")
+
+    time.sleep(DELAY)
+    pydirectinput.press('down', presses=16)
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+
+    pydirectinput.press('down')
+    time.sleep(DELAY)
+    pydirectinput.press('enter', presses=5)
+    time.sleep(DELAY)
+    log("Rocket Pop purchased.", "info")
+
+    pydirectinput.press('up')
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+    pydirectinput.press('up', presses=16)
+
+    pass
+
 def buy_dragon_fruit():
     log("Buying Dragon Fruit seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=16)
+    pydirectinput.press('down', presses=17)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -536,7 +562,7 @@ def buy_dragon_fruit():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=16)
+    pydirectinput.press('up', presses=17)
 
     pass
 
@@ -544,7 +570,7 @@ def buy_acorn():
     log("Buying Acorn seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=17)
+    pydirectinput.press('down', presses=18)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -561,7 +587,7 @@ def buy_acorn():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=17)
+    pydirectinput.press('up', presses=18)
 
     pass
 
@@ -569,7 +595,7 @@ def buy_cherry():
     log("Buying Cherry seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=18)
+    pydirectinput.press('down', presses=19)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -586,7 +612,7 @@ def buy_cherry():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=18)
+    pydirectinput.press('up', presses=19)
 
     pass
 
@@ -594,7 +620,7 @@ def buy_sunflower():
     log("Buying Sunflower seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=19)
+    pydirectinput.press('down', presses=20)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -611,7 +637,32 @@ def buy_sunflower():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=19)
+    pydirectinput.press('up', presses=20)
+
+    pass
+
+def buy_fire_fern():
+    log("Buying Fire Fern seed.", "info")
+
+    time.sleep(DELAY)
+    pydirectinput.press('down', presses=21)
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+
+    pydirectinput.press('down')
+    time.sleep(DELAY)
+    pydirectinput.press('enter', presses=5)
+    time.sleep(DELAY)
+    log("Fire Fern purchased.", "info")
+
+    pydirectinput.press('up')
+    time.sleep(DELAY)
+
+    pydirectinput.press('enter')
+    time.sleep(DELAY)
+    pydirectinput.press('up', presses=21)
 
     pass
 
@@ -619,7 +670,7 @@ def buy_venus_fly_trap():
     log("Buying Venus Fly Trap seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=20)
+    pydirectinput.press('down', presses=22)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -636,7 +687,7 @@ def buy_venus_fly_trap():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=20)
+    pydirectinput.press('up', presses=22)
 
     pass
 
@@ -644,7 +695,7 @@ def buy_pomegranate():
     log("Buying Pomegranate seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=21)
+    pydirectinput.press('down', presses=23)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -661,7 +712,7 @@ def buy_pomegranate():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=21)
+    pydirectinput.press('up', presses=23)
 
     pass
 
@@ -669,7 +720,7 @@ def buy_poison_apple():
     log("Buying Poison Apple seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=22)
+    pydirectinput.press('down', presses=24)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -686,7 +737,7 @@ def buy_poison_apple():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=22)
+    pydirectinput.press('up', presses=24)
 
     pass
 
@@ -694,7 +745,7 @@ def buy_moon_bloom():
     log("Buying Moon Bloom seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=23)
+    pydirectinput.press('down', presses=25)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -711,7 +762,7 @@ def buy_moon_bloom():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=23)
+    pydirectinput.press('up', presses=25)
 
     pass
 
@@ -719,7 +770,7 @@ def buy_hypno_bloom():
     log("Buying Hypno Bloom seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=24)
+    pydirectinput.press('down', presses=26)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -736,7 +787,7 @@ def buy_hypno_bloom():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=24)
+    pydirectinput.press('up', presses=26)
 
     pass
 
@@ -744,7 +795,7 @@ def buy_dragons_breath():
     log("Buying Dragon's Breath seed.", "info")
 
     time.sleep(DELAY)
-    pydirectinput.press('down', presses=25)
+    pydirectinput.press('down', presses=27)
     time.sleep(DELAY)
 
     pydirectinput.press('enter')
@@ -761,7 +812,7 @@ def buy_dragons_breath():
 
     pydirectinput.press('enter')
     time.sleep(DELAY)
-    pydirectinput.press('up', presses=25)
+    pydirectinput.press('up', presses=27)
 
     pass
 
@@ -1338,10 +1389,12 @@ SEED_BUY_MAP = {
     "Grape": buy_grape,
     "Coconut": buy_coconut,
     "Mango": buy_mango,
+    "Rocket Pop": buy_rocket_pop, # Limited Time Seed
     "Dragon Fruit": buy_dragon_fruit,
     "Acorn": buy_acorn,
     "Cherry": buy_cherry,
     "Sunflower": buy_sunflower,
+    "Fire Fern": buy_fire_fern,
     "Venus Fly Trap": buy_venus_fly_trap,
     "Pomegranate": buy_pomegranate,
     "Poison Apple": buy_poison_apple,
